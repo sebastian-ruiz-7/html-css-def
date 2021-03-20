@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,26 +14,42 @@
 <body>
 
     <header>
-        <h1>Mi primer formulario</h1>
+        <h1>Mi formulario para saber las fechas de ida y vuelta</h1>
     </header>
 
     <main>
         <section>
             <form action="">
-                <label for="name">
-                    <span>¿Cuál es tu nombre?</span>
-                    <input type="text" placeholder="Nombre" id="name">    
+                <label for="fecha-ida">
+                    <samp>Fecha de ida</samp>
+                    <input type="date" id="fecha-ida" name="fecha-ida">
+                     
                 </label>
-                
-                <label for="birthday">
-                    <span>Fecha de nacimiento</span>
-                    <input type="date" id="birthday">    
+
+                <label for="week-ida">
+                    <input type="week" id="week-ida" name="week-ida">
                 </label>
-                
-                <label for="schedule"></label>
-                <span>¿A qué hora te despiestas?</span>
-                <input type="time" id="schedule">
+
+                <label for="month-ida">
+                    <input type="month" id="month-ida" name="mothn-ida">
+                </label>
+
+                <label for="">
+                    <input type="time" id="schedule-ida" name="schedule-ida">
+                </label>
             </form>
+        </section>
+
+
+        <section>
+            <form action="">
+                <samp>Fecha de regreso</samp>
+            <label for="">
+                <input type="datetime-local" id="date-vuelta" name="date-vuelta">
+            </label>
+            <input type="submit">
+            </form>
+            
         </section>
     </main>
 
