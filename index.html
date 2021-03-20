@@ -18,39 +18,38 @@
     </header>
 
     <main>
-        <section>
-            <form action="">
-                <label for="fecha-ida">
-                    <samp>Fecha de ida</samp>
-                    <input type="date" id="fecha-ida" name="fecha-ida">
-                     
-                </label>
-
-                <label for="week-ida">
-                    <input type="week" id="week-ida" name="week-ida">
-                </label>
-
-                <label for="month-ida">
-                    <input type="month" id="month-ida" name="mothn-ida">
-                </label>
-
-                <label for="">
-                    <input type="time" id="schedule-ida" name="schedule-ida">
-                </label>
-            </form>
-        </section>
-
-
-        <section>
-            <form action="">
-                <samp>Fecha de regreso</samp>
-            <label for="">
-                <input type="datetime-local" id="date-vuelta" name="date-vuelta">
+        <form action="">
+            <label for="first-name">
+                <span>Primer nombre</span>
+                <input type="text" id="first-name"  name="first-name" autocomplete="given-name" required placeholder="Primer Nombre...">
             </label>
+
+
+            <label for="additional-name">
+                <span>Segundo nombre</span>
+                <input type="text" id="additional-name" name="additional-name" autocomplete="additional-name" placeholder="Segundo Nombre...">
+            </label>
+
+
+            <label for="family-name">
+                <span>Apellidos</span>
+                <input type="text" id="family-name" name="family-name" autocomplete="family-name" required placeholder="Apellidos...">
+            </label>
+
+
+            <label for="email">
+                <span>Correo</span>
+                <input type="email" id="email" name="email" autocomplete="email" required placeholder="email@gmail.com">
+            </label>
+
+
+            <label for="new password">
+                <span>Nueva contraseña</span>
+                <input type="new-password" id="new-password" name="new-password" autocomplete="new-password" required placeholder="Contraseña...">
+            </label>
+
             <input type="submit">
-            </form>
-            
-        </section>
+        </form>
     </main>
 
     <footer>
