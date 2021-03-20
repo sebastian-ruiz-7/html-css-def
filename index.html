@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta name="robots" content="index,follow">
     <!-- Title of the page -->
-    <title>Mi lista del super con links a recetas</title>
+    <title>Mi primer formulario</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
@@ -14,92 +14,27 @@
 <body>
 
     <header>
-        <h1>Mi lista del super</h1>
+        <h1>Mi primer formulario</h1>
     </header>
 
     <main>
-        <ul>
-            <section>
-                <li>Frutas</li>
-                <ol>
-                    <li>Plátano</li>
-
-                    <!-- <figure>
-                        <img src="./img/banana.jpg" alt="Banana image" width="250">
-                        <figcaption>Banana image</figcaption>
-                    </figure> -->
-
-                    <video src="./videos/Banana - 18091.mp4" controls preload="auto"></video>
-
-
-
-                    <li>Manzana</li>
-                    <!-- <figure>
-                        <img src="./img/apple.jpg" alt="Apple image" width="250">
-                        <figcaption>Apple image</figcaption>
-                    </figure> -->
-                    <video src="./videos/Apple - 28535.mp4" controls preload="auto"></video>
-
-
-                    <li>Naranja</li>
-                    <!-- <figure>
-                        <img src="./img/orange.jpg" alt="Orange image" width="250">
-                        <figcaption>Orange image</figcaption>
-                    </figure> -->
-                    <video src="./videos/Oranges - 1721.mp4" controls preload="auto"></video>
-
-                </ol>
-            </section>
-            
-            <li>Verduras</li>
-                <section>
-                    <ol>
-                        <li>Aguate</li>
-                        <!-- <figure>
-                            <img src="./img/avocado.jpg" alt="Avocado image" width="250">
-                            <figcaption>Avocado image</figcaption>
-                        </figure> -->
-                        <video src="./videos/Guacamole - 8247.mp4" controls preload="auto"></video>
-    
-                        <li>Jitomate</li>
-                        <!-- <figure>
-                            <img src="./img/tomato.jpg" alt="Tomato image" width="250">
-                            <figcaption>Tomato image</figcaption>
-                        </figure> -->
-                        <video src="./videos/Fruit - 33252.mp4" controls preload="auto"></video>
-    
-                        <li>Cebolla</li>
-                        <!-- <figure>
-                            <img src="./img/onion.jpg" alt="Onion image" width="250">
-                            <figcaption>Onion image</figcaption>
-                        </figure> -->
-                        <video src="./videos/Onion - 11230.mp4" controls preload="auto"></video>
-                    </ol>
-                </section>
+        <section>
+            <form action="">
+                <label for="name">
+                    <span>¿Cuál es tu nombre?</span>
+                    <input type="text" placeholder="Nombre" id="name">    
+                </label>
                 
-
-            <li>Carne</li>
-                <section>
-                    <ol>
-                        <li>Pollo</li>
-                        <!-- <figure>
-                            <img src="./img/chicken.jpg" alt="Chicken image" width="250">
-                            <figcaption>Chicken image</figcaption>
-                        </figure> -->
-                        <video src="./videos/Spicy - 11718.mp4"></video>
-
-
-                        <li>Bistec</li>
-                        <!-- <figure>
-                            <img src="./img/meatBeff.jpg" alt="Meat Beff image" width="250">
-                            <figcaption>Meat Beff image</figcaption>
-                        </figure> -->
-                        <video src="./videos/Fried Meat - 9521.mp4"></video>
-
-                    </ol>
-                </section>
+                <label for="birthday">
+                    <span>Fecha de nacimiento</span>
+                    <input type="date" id="birthday">    
+                </label>
                 
-        </ul>
+                <label for="schedule"></label>
+                <span>¿A qué hora te despiestas?</span>
+                <input type="time" id="schedule">
+            </form>
+        </section>
     </main>
 
     <footer>
