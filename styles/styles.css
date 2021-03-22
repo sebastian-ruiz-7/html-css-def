@@ -1,28 +1,12 @@
 *{
-    font-family: 'Arial';
-    color: seashell;
-    background-color: #13a4a4;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.links-header{
-    list-style: none;
-}
-
-.links-header__item{
-    display: inline-block;
-    padding-left: 10px;
-    text-align: center;
-}
-
-.links-header__item a{
-    text-decoration: none;
-}
-
-.links-header__item:hover{
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.links-header__item::after{
-    content: ' | ';
+main{
+    padding: 40px 50px;
+    width: 100%;
+    height: 500px;
+    border: 10px solid grey;
 }
