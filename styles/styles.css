@@ -1,27 +1,28 @@
 *{
     font-family: 'Arial';
-}
-body {
-    background-image: radial-gradient(circle at 50% -20.71%, #8cfff3 0, #6cfbf2 25%, #3cf2f2 50%, #00e8f3 75%, #00dff5 100%);
+    color: seashell;
+    background-color: #13a4a4;
 }
 
+.links-header{
+    list-style: none;
+}
 
-header{
+.links-header__item{
+    display: inline-block;
+    padding-left: 10px;
     text-align: center;
 }
 
-main{
-    column-count: 3;
+.links-header__item a{
+    text-decoration: none;
 }
 
-img {
-    width: 300px;
+.links-header__item:hover{
+    text-decoration: underline;
+    font-weight: bold;
 }
 
-ul{
-    color: darkkhaki;
-}
-
-ol{
-    color: darkmagenta;
+.links-header__item::after{
+    content: ' | ';
 }
