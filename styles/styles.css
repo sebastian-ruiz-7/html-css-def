@@ -1,0 +1,27 @@
+*{
+    font-family: 'Arial';
+}
+body {
+    background-image: radial-gradient(circle at 50% -20.71%, #8cfff3 0, #6cfbf2 25%, #3cf2f2 50%, #00e8f3 75%, #00dff5 100%);
+}
+
+
+header{
+    text-align: center;
+}
+
+main{
+    column-count: 3;
+}
+
+img {
+    width: 300px;
+}
+
+ul{
+    color: darkkhaki;
+}
+
+ol{
+    color: darkmagenta;
+}
