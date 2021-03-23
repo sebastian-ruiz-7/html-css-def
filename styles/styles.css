@@ -1,10 +1,10 @@
-/* Este tipo de combinador es el tipo Adjacent sibling (hermano adyacente) */
+/* Este tipo de combinador es el tipo general sibling (hermano general) */
 /*Se aplicara la estelización a la etiqueta de hasta la derecha*/
-/* Siempre que cumpla con la regla de antes del signo + */
+/* Siempre que cumpla con la regla de antes del signo ~ */
 
 /* Para este caso se le aplicará la estelización a la etiqueta p
-que esté justo debajo de una etiqueta h2 */
-h2+p{
+siempre y cuando exista un h2 a la misma línea, es decir, que sean hermanos*/
+h2~p{
     color: red;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 8px;
