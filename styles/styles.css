@@ -1,8 +1,31 @@
-html{
-    font-size: 75%;
-    font-family: 'Times New Roman', Times, serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
-    font-size: inherit;
+.header__h1{
+    color: darkblue;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 10px;
+}
+
+.main__links-de-informacion li{
+    padding-top: 10px;
+    display: inline-block;
+    background-color: beige;
+    color: blanchedalmond;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.main__links-de-informacion a{
+    text-decoration: none;
+}
+
+.main__links-de-informacion li:hover{
+    color: cornflowerblue;
+    text-decoration: underline;
+    background-color: cornflowerblue;
 }
