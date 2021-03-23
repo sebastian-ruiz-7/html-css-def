@@ -1,31 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Este tipo de combinador es el tipo Adjacent sibling (hermano adyacente) */
+/*Se aplicara la estelización a la etiqueta de hasta la derecha*/
+/* Siempre que cumpla con la regla de antes del signo + */
 
-.header__h1{
-    color: darkblue;
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-bottom: 10px;
-}
-
-.main__links-de-informacion li{
-    padding-top: 10px;
-    display: inline-block;
-    background-color: beige;
-    color: blanchedalmond;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.main__links-de-informacion a{
-    text-decoration: none;
-}
-
-.main__links-de-informacion li:hover{
-    color: cornflowerblue;
-    text-decoration: underline;
-    background-color: cornflowerblue;
+/* Para este caso se le aplicará la estelización a la etiqueta p
+que esté justo debajo de una etiqueta h2 */
+h2+p{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
 }
