@@ -1,125 +1,61 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    block-size:border-box;
 }
 
 html{
     font-size: 62.5%;
-    margin: 0;
+}
+
+.container{
+    border: 0.3rem solid black;
+    display: flex;
+    /* Acomoda los elementos con el mismo espacio, se incluye el espacio de los bordes */
+    /* justify-content: space-evenly;  */
+
+    /* Deja el mismo espacio entre los elementos, pero el espacio en los extremos es distinto */
+    /* justify-content: space-around; */
+
+    /* Acomoda los elementos sin dejar espacio en los extremos */
+    /* justify-content: space-between; */
+
+    /* En caso de que el contenido no se alcance a colocar en una línea, automáticamente el uso del wrap baja a la siguiente línea los elementos */
+    flex-wrap: wrap;
+
+    flex-direction:row-reverse
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+}
+
+.box1{
+    background-color: blue;
 }
 
 
+.box2{
+    background-color: chocolate;
+}
 
-.header{
+
+.box3{
+    background-color: darkblue;
+}
+
+
+.box4{
+    background-color: firebrick;
+}
+
+
+.box5{
+    background-color: green;
+}
+
+
+.box6{
     background-color: khaki;
-    width: 100vw;
-    height: 10vh;
-}
-
-.header__element{
-    display: inline-block;
-}
-
-.header p{
-    position: absolute;
-    left: 0;
-}
-
-
-.header nav{
-    position: absolute;
-    right: 0;
-}
-
-.header li{
-    display: inline-block;
-    list-style: none;
-    padding-left: 2.5px;
-    padding-right: 2.5px;
-}
-
-
-footer{
-    width: 100vw;
-    height: 6vh;
-    background-color: red;
-    position: absolute;
-    bottom:0;
-    font-size: 7px;
-}
-
-
-.footer__redes-sociales {
-    display: inline-block;
-}
-
-
-footer p{
-    padding-left: 7vw;
-}
-
-.footer__redes-sociales ul{
-    padding-left: 10px;
-}
-
-
-.footer__redes-sociales li{
-    display: inline;
-}
-
-.footer__pagos{
-    display: inline-block;
-    
-}
-
-nav.footer__pagos ul{
-    position: absolute;
-    right: 0;
-}
-
-p.footer__pagos{
-    right: 10px;
-    padding-right: 10px;
-}
-.footer__pagos li{
-    display: inline-block;
-    padding-left: 2.5px;
-    padding-right: 2.5px;
-    
-}
-
-nav.footer__pagos ul{
-    padding-right: 5vw;
-}
-
-
-main{
-    height: calc(84vh);
-    padding: 0;
-    background-color: cadetblue;
-    margin: 0;
-}
-
-.main__barra-lateral{
-    background-color: burlywood;
-    padding-right: 2.5vw;
-    padding-left: 2.5vw;
-}
-
-.main__barra-lateral section{
-    background-color: rosybrown;
-    width: 15vw;
-    height: 15vh;
-    border-radius: 7px;
-    margin-top: 2.5vh;
-    margin-bottom: 2.5vh;
-}
-
-.main__barra-lateral, .main__texto-principal{
-    display: inline-block;
-}
-
-.main__texto-principal {
-    position: absolute;
 }
