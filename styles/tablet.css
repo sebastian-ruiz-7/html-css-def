@@ -1,0 +1,37 @@
+html{
+    max-width: 800px;
+}
+
+.header-container{
+    flex-direction: row;
+}
+
+.header-container__logo{
+    max-width: 150px;
+}
+
+.header-container__img{
+    margin:1rem 1.5rem;
+}
+
+.header-menu{
+    flex-grow: 1;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+.header-menu__option{
+    font-size: 1.7rem;
+}
+
+.progress-container__img{
+    width: 45%;
+    padding: 0.3rem 1rem;
+}
+
+.courses-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

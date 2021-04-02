@@ -6,103 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta name="robots" content="index,follow">
     <!-- Title of the page -->
-    <title>Demo de especifidad y orden en selectores</title>
+    <title>Platzi</title>
+    <!-- Layout for mobile -->
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Layout for tablet -->
+    <link rel="stylesheet" href="./styles/tablet.css" media="only screen and (min-width:600px)">
+    <!-- Layout for desktop -->
+    <link rel="stylesheet" href="./styles/desktop.css" media="only screen and (min-width:950px)">
 </head>
 
 <body>
-<header class="header">
-    <figure>
-        <a href="#">
-        <img class="header__logo" src="https://logodownload.org/wp-content/uploads/2020/07/nfl-logo-0.png" alt="NFL logo" srcset="">
-        </a>
-    </figure>
-
-    <nav class="header__menu">
-        <p><a class="header__option" href="#">Teams</a></p>
-        <p><a class="header__option" href="#">Schedule</a></p>
-        <p><a class="header__option" href="#">Videos</a></p>
-        <p><a class="header__option" href="#">Players</a></p>
-        <button class="header__option sign-in-button"><a  href="#">Sign In</a></button>
-
-    </nav>
-</header>
+    <header class="header-container">
+        <figure class="header-container__logo">
+            <img class="header-container__img" src="https://mlvtyrcw1pgk.i.optimole.com/I8xZkNQ.ww1S~d781/w:1559/h:496/q:90/https://alphaproacademy.com/wp-content/uploads/2020/05/logo-platzi.svg" alt="Platzi logo" srcset="">
+        </figure>
+        <div class="header-menu">
+            <a class="header-menu__option" href="#">Home</a>
+            <a class="header-menu__option" href="#">Courses</a>
+            <a class="header-menu__option" href="#">Teachers</a>
+            <a class="header-menu__option" href="#">Blog</a>
+        </div>
+    </header>
 
 
-<main>
-    <!-- Jersey 1 -->
-        <section class="section-jersey">
-            <div class="jersey__box">
-                <figure>
-                    <img class="jersey__image team--logo" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="Steelers logo" srcset="">
-
-                    <img class="jersey__image team--jersey" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh48uTvDLZFzdCzDG9yvNYycBVV_iKs-upHA&usqp=CAU" alt="Steelers Jersey" srcset="">
-                </figure>
-            </div>
-
-<!-- Jersey 2 -->
-            <div class="jersey__box">
-                <figure>
-                    <img class="jersey__image team--logo" src="https://logodownload.org/wp-content/uploads/2020/07/dallas-cowboys-logo-0.png" alt="Cowboys logo" srcset="">
-
-                    <img class="jersey__image team--jersey" src="https://www.innovasport.com/medias/jersey-dallas-cowboys-elliott-is-479384-437-1.jpg?context=bWFzdGVyfGltYWdlc3wxMDI5MDF8aW1hZ2UvanBlZ3xpbWFnZXMvaDdiL2gyYS85Nzc4MzcxMTMzNDcwLmpwZ3wxMGViYWUwNWRmM2I1OGJjZWY4YmRhMDM0YWM3ZmZiYThjYjE2YzMzOTE4NmRiN2Q4NTQwZjQxZGZjZDFmZDA0" alt="Cowboys Jersey" srcset="">
-                </figure>
-            </div>
-
-<!-- Jersey 3 -->
-            <div class="jersey__box">
-                <figure>
-                    <img class="jersey__image team--logo new-england-logo" src="https://seeklogo.com/images/N/new-england-patriots-logo-0F63095755-seeklogo.com.png" alt="New England logo" srcset="">
-
-                    <img class="jersey__image team--jersey" src="https://fanatics.frgimages.com/FFImage/thumb.aspx?i=/productimages/_3687000/altimages/ff_3687787-7ebcd496dbf56ac205bbalt1_full.jpg&w=900" alt="New England Jersey" srcset="">
-                </figure>
-            </div>
-
-<!-- Jersey 4 -->
-            <div class="jersey__box">
-                <figure>
-                    <img class="jersey__image team--logo SF49ers-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/3a/San_Francisco_49ers_logo.svg" alt="Steelers logo" srcset="">
-
-                    <img class="jersey__image team--jersey" src="https://images.footballfanatics.com/FFImage/thumb.aspx?i=/productimages/_3243000/altimages/ff_3243824alt1_full.jpg&w=900https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh48uTvDLZFzdCzDG9yvNYycBVV_iKs-upHA&usqp=CAU" alt="Steelers Jersey" srcset="">
-                </figure>
-            </div>
-
-
-        </section>
-
-        <section class="main-box">
-            <figure>
-                <img class="main-box__jersey" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh48uTvDLZFzdCzDG9yvNYycBVV_iKs-upHA&usqp=CAU" alt="" srcset="">
+    <main>
+        <!-- Description container -->
+        <div class="description-container">
+            <figure class="description-container__group">
+                <img class="description-container__img" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F62945180%2F268546345116%2F1%2Foriginal.20190527-191303?auto=compress&s=945c83989e9815e7136b84d126ac82fc" alt="Platzi Group">
             </figure>
+            <p class="description-container__text">Aprende desde cero a crear el futo web con nuestros cursos online profesionales de tecnología. ¡Cursos de desarrollo, diseño, marketing y negocios!</p>
+        </div>
 
-            <figure>
-                <p class="main-box__logo--p">
-                    Pittsburgh Steelers
-                </p>
-                <img class="main-box__logo " src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="Steelers logo" srcset="">
+        <!-- Progress container -->
+        <div class="progress-container">
+            <p class="progress-container__title">Progreso</p>
 
-                <p class="main-box__logo--p2">Los Pittsburgh Steelers son un equipo profesional de fútbol americano de los Estados Unidos con sede en Pittsburgh, Pensilvania. Forman parte de la AFC Norte de la National Football League. Juegan en el Heinz Field con sede en la ciudad de Pittsburgh Pennsylvania, Estados Unidos.​</p>
-            </figure>
+                <figure class="courses-container">
+                    <img class="progress-container__img" src="./img/webdev-school.jpeg" alt="Webdev school">
+                    <img class="progress-container__img" src="./img/JS-school.jpeg" alt="JS school">
+                    <img class="progress-container__img" src="./img/exclusive-courses.jpeg" alt="Exclusive courses">
+                    <img class="progress-container__img" src="./img/approved-courses.jpeg" alt="Approved courses">
+                    <img class="progress-container__img" src="./img/new-route.jpeg" alt="New route">
+                </figure>
+            </div>
+        </div>
 
-        </section>
+    </main>
 
+    <footer class="footer-container">
+        <p class="footer-container__text">Made with &#128151; in Platzi</p>
+    </footer>
 
-</main>
-
-
-<footer class="footer">
-    <figure>
-        <img class="footer__logo" src="https://logodownload.org/wp-content/uploads/2020/07/nfl-logo-0.png" alt="NFL logo" srcset="">
-    </figure>
-
-    <p class="footer__text">
-         © 2021 NFL Enterprises LLC. NFL and the NFL shield design are registered trademarks of the National Football League.The team names, logos and uniform designs are registered trademarks of the teams indicated. All other NFL-related trademarks are trademarks of the National Football League. NFL footage © NFL Productions LLC.
-    </p>
-
-    <nav class="footer__menu">
-        <a class="footer__option" href="#">Privacy Policy</a>
-        <a class="footer__option" href="#">Terms of Service</a>
-    </nav>
-</footer>
 </body>
 </html>

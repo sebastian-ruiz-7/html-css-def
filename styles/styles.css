@@ -6,206 +6,106 @@
 
 html{
     font-size: 62.5%;
+    background-color: #121f3d ;
+    font-family: Roboto,sans-serif;
+    height: auto;
+    max-width: 420px;
+    margin: 0 auto;
 }
 
-.header{
+.header-container{
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: #013369;
-}
-
-.header__logo{
-    width: 5rem;
-    height: 5rem;
-}
-
-
-.header__menu{
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-grow: 1;
-    justify-content: flex-end;
+    border-bottom: 0.3rem solid forestgreen; 
+}
+
+
+.header-container__logo{
+    width: 30%;
+    
+}
+
+.header-container__img{
+    width: 100%;
+    
+}
+
+.header-menu{
+    display: flex;
+}
+
+.header-menu__option{
+    text-decoration: none;
+    color: #eff3f8;
+    padding:0.5rem 0.7rem;
+    font-weight: bold;
+}
+
+.header-menu__option:hover{
+    text-decoration: underline;
+}
+
+
+.description-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 0;
+    align-items: center;
+    border-bottom: 0.3rem solid forestgreen; 
+}
+
+.description-container__group{
+    width: 90%;
+}
+
+.description-container__img{
+    width: 100%;
+}
+
+.description-container__text{
+    text-align: center;
+    color: #eff3f8;
+    padding: 0.25rem 1rem;
+    font-size: 1.4rem;
+}
+
+
+.progress-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    border-bottom: 0.3rem solid forestgreen; 
+
+}
+
+.progress-container__title{
     font-size: 1.6rem;
-    
-    
-}
-
-.header__option{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    text-decoration: none;
-    color: #fafafa;
-    font-weight: bold;
-    font-family: All-ProSans,Helvetica,Arial,sans-serif;
-    margin-bottom: 1rem solid #fafafa;
-    padding-bottom: 3px;
-}
-
-.header__option:hover{
-    text-decoration: underline;
-}
-
-
-.sign-in-button{
-    background-color: #fafafa;
-    border:none;
-    border-radius: 0.5rem;
-    border-color: #fafafa;
-    margin-right: 5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    height: 35px;
-}
-
-
-.sign-in-button a{
-    text-decoration: none;
-    color: #013369;
-    font-family: All-ProSans,Helvetica,Arial,sans-serif;
+    color: #eff3f8;
+    padding-bottom: 1rem;
+    padding-left: 0.7rem;
     font-weight: bold;
 }
 
-.sign-in-button a:hover{
-    text-decoration: underline;
-}
-
-
-
-.footer__logo{
-    width: 15rem;
-    height: 15rem;
-}
-
-
-.footer{
+.courses-container{
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #013369;
     align-items: center;
-    height: 25rem;
-    position: absolute;
-    bottom: 0;
-    flex-grow: 1;
 }
 
+.progress-container__img{
+    width: 90%;
+    padding: 0.5rem 0;
+    border-radius: 1rem;
+}
 
-.footer__text{
-    font-family: All-ProSans,Helvetica,Arial,sans-serif;
-    color: #fafafa;
-    font-size: 1.1rem;
-    font-weight: 300;
-    width: 100vw;
+.footer-container__text{
+    color: #eff3f8;
     text-align: center;
-    padding-top: 0.5rem;
-    padding-bottom: 1.5rem;
-}
-
-
-.footer__option{
-    font-family: All-ProSans,Helvetica,Arial,sans-serif;
-    color: #fafafa;
-    font-size: 1.6rem;
-    font-weight: bold;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    text-decoration: none;
-}
-
-.footer__option:hover{
-    text-decoration: underline;
-}
-
-.footer__menu{
-    padding-bottom: 1.5rem;
-}
-
-.section-jersey{
-    background-color: #013369;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    /* flex-grow: ; */
-    justify-content: space-around;
-    align-items: center;
-    height:74.4vh;
-    width: 35rem;
-
-}
-
-.section-jersey div{
-    width: 30rem;
-    height: 20rem;
-    background-color:#fafafa;
-    border-radius: 2rem;    
-}
-
-
-.jersey__box{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    border: #1b48e0 solid 0.3rem;
-}
-
-.team--logo{
-    height: 5rem;
-    padding-bottom: 7.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.team--jersey{
-    height: 19rem;
-}
-
-.new-england-logo{
-    width: 6rem;
-    height: 4rem;
-}
-
-.SF49ers-logo{
-    width: 6rem;
-    height: 4rem;
-}
-
-main{
-    display: flex;
-
-}
-
-.main-box{
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    padding-left: 30rem;
-}
-
-.main-box__jersey{
-    
-    height:35vh;
-}
-
-.main-box__logo{
-    padding-left: 50rem;
-    padding-bottom: 5rem;
-    padding-top: 2rem;
-}
-
-.main-box__logo--p{
-    padding-left: 47rem;
-    font-size: 2.5rem;
-    font-family: All-ProSans,Helvetica,Arial,sans-serif;
-    font-weight: bolder;
-}
-
-.main-box__logo--p2{
-    padding-left: 30rem;
-    font-size: 1.5rem;
-    font-family: All-ProSans,Helvetica,Arial,sans-serif;
-    font-weight: bolder;
-    width: 60rem;
-    text-align: center;
+    font-size: 2rem;
 }
